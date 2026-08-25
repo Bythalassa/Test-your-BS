@@ -8,9 +8,8 @@ public class Enemybase : MonoBehaviour
     public int health = 10;
     public bool IsDead;
 
-    private void Start()
-    {
-        TakeDamage(40);
+    void Start(){
+        TakeDamage(7);
     }
 
     public void TakeDamage() //Metodo Simple

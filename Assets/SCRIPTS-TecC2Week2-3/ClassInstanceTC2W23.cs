@@ -18,7 +18,7 @@ public class ClassInstanceTC2W23 : MonoBehaviour
     {
         public string EnemyName;
         public float Hp;
-        
+
         public void TakeDamage(float damage)
         {
             Hp -= damage;
@@ -28,10 +28,9 @@ public class ClassInstanceTC2W23 : MonoBehaviour
         {
             if (Hp >= 0f)
             {
-                Destroy(gameObject);
+                //Destroy(gameObject);
             }
         }
 
-
-
+    }
 }
