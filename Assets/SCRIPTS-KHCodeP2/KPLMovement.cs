@@ -26,14 +26,16 @@ public class KPLMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.linearVelocity = moveDir * speed;
+        rb.linearVelocity = moveDir * speed; 
+
         // cs: Muévete en la dirección moveDir, a esta velocidad (speed)".
         // motor mediante el wrapper de RG 2D: get value FixedUpdate.
     }
 
     /* Alternativas a la función de moverse actualmente que aún no conozco :
+    SRC Explicativa : https://www.youtube.com/watch?v=Y3xkgpCukow
 
-  rb.AddForce(moveDir * speed); 
+  rb.AddForce(moveDir * speed);
     Pero acá sí notás una diferencia real: el objeto va a tener inercia 
     (sigue deslizando un poco después de soltar la tecla, tarda en frenar/acelerar)
 
