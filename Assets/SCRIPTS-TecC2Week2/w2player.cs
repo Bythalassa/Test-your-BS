@@ -18,6 +18,8 @@ public class w2player : MonoBehaviour
     {
 
         weapon.Attack(enemigo);
+        // weapon si esta vinculado y es con el GetComponent -> vinculo 
+
     }
 }
 

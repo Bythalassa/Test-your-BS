@@ -27,10 +27,8 @@ public class w2Weapon : MonoBehaviour
                 al componente w2Health
 
                 3. si ese GameObject en la escena tiene un w2Health con health = 20,
-                targetHealth apunta exactamente a ese objeto en memoria
-
+                targetHealth apunta exactamente a ese objeto en memoria -> la propiedad actual del enemy de health :_D
              */
-
         }
     }
 

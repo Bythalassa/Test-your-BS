@@ -5,9 +5,9 @@ using UnityEngine;
 public class w2Health : MonoBehaviour
 {
     private int health = 20;
-    private int maxHealth = 100;
+  //  private int maxHealth = 100;
 
-    public w2Health(int vida) // estre constructor nunca se ejecuta
+    public w2Health(int vida) // este constructor nunca se ejecuta
     {
         Vida = vida;
     }
@@ -19,7 +19,6 @@ public class w2Health : MonoBehaviour
         if (damageAmount < 0) return;
 
         health -= damageAmount;
-        Debug.Log(gameObject.name + "recibio" + damageAmount + "de daño.  Vida actual:" + health);
 
         if (health <= 0)
         {
