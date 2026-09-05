@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerBase : MonoBehaviour
+public class w2TakeDamage : MonoBehaviour
 {
     void Start()
     {
