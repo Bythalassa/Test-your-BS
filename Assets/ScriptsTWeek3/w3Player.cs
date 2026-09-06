@@ -59,10 +59,7 @@ public class w3Player : MonoBehaviour
         {
             if (Vector3.Distance(transform.position, enemy.transform.position)< 3)
             {
-
-                // enemy.GetComponent<Enemy>().EneTakeDamageManager();
-                //aqui activa el managerdel take damage
-
+                enemy.GetComponent<w3Enemy>().EneTakeDamage();
             }
         }
     }
