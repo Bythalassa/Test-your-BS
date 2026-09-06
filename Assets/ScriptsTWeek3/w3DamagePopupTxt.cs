@@ -2,16 +2,16 @@ using UnityEngine;
 
 // todo lo que no deriva de Monobehavior es cosiderado una Base de Datos
 
-public class DamagePopupTxt : MonoBehaviour
+public class w3DamagePopupTxt : MonoBehaviour
 {
     public string Text; 
 
-    public DamagePopupTxt(string text)
+    public w3DamagePopupTxt(string text)
     {
         Text = text; 
     }
 
-    ~DamagePopupTxt() 
+    ~w3DamagePopupTxt() 
     {
         System.Console.WriteLine("Popup finalizado por el GC");
     }
