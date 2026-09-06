@@ -21,8 +21,6 @@ public class w3Player : MonoBehaviour
         DamageDospuntoceroreferencial = w3EnemyScript.EnemyWeaponOneinfo.Damage;
     }
 
-
-
     public void PlTakeDamage()
     {
         if (PlCurrentHealth > 0)
@@ -37,7 +35,6 @@ public class w3Player : MonoBehaviour
         }
     }
 
-
     public void Die()
     {
         Debug.Log("Player is Dead");
@@ -50,7 +47,6 @@ public class w3Player : MonoBehaviour
         // funcion to enable player take Weapon and its values == Weaponsinfo, 
         // and could change to another weapon vielleicht
     }
-
     public void Attack() 
     {
         GameObject[] Enemies = GameObject.FindGameObjectsWithTag("Enemy");
