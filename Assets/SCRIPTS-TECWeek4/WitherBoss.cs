@@ -10,14 +10,14 @@ public class w4WitherBoss : w4Zombie
         base.Awake();
     }
     
-     actualHealth = basestats.Health
+     //actualHealth = basestats.Health
 
 
     protected override void TakeDamage(int damage)
     {
         base.TakeDamage(damage);
 
-        // actualHealth = basestats.Health;
+         actualHealth = basestats.Health;
 
         damage -= actualHealth; 
 
