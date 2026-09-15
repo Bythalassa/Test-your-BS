@@ -10,6 +10,8 @@ public abstract class w4BaseEnemy : w4Entity
     protected override void TakeDamage(int damage)
     {
         Debug.Log("ouch");
+        
+
     }
 
     protected override void AttackSmt(w4Entity entity)
