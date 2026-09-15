@@ -1,26 +1,33 @@
 using UnityEngine;
-
 public class w4Spider : w4BaseEnemy
 {
-    public override void DoDamage()
+    protected override void Awake()
     {
-
+        base.Awake();
+        EvolutionS();
+    }
+    protected override void TakeDamage(int damage)
+    {
+        base.TakeDamage(damage);
+    }
+    protected override void AttackSmt(w4Entity entity)
+    {
+        base.AttackSmt(entity);
+        Debug.Log("empujo al atacar");
+    }
+    protected override void OnDead()
+    {
+        base.OnDead();
+        Debug.Log("suelto tela de araña");
+    }
+    protected override void ChaseEntity(w4Entity entity)
+    {
+        base.ChaseEntity(entity);
+        Debug.Log("salto mientras digo pssst");
     }
 
-    public override void OnDead()
+    private void EvolutionS()
     {
-
+        Debug.Log("Cuando me tiran posiones de crecimiento EVOLUCIONO");
     }
-
-    public override void OnSpawn()
-    {
-
-    }
-
-    public override void TakeDamage()
-    {
-
-    }
-
-
 }

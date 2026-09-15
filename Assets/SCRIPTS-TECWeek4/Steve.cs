@@ -2,34 +2,29 @@ using UnityEngine;
 
 public class w4Steve : w4Entity
 {
-    public override void DoDamage()
-    { 
-
-    }
-
-
-    public override void OnDead()
+    protected override void Awake()
     {
-
+        base.Awake();
     }
 
-    public override void OnSpawn()
+    protected override void TakeDamage(int damage)
     {
-
+        throw new System.NotImplementedException();
     }
-
-    public override void TakeDamage()
+    protected override void AttackSmt(w4Entity entity)
     {
-
+        throw new System.NotImplementedException();
     }
 
-
+    protected override void OnDead()
+    {
+        throw new System.NotImplementedException();
+    }
 
     //------------------------------------- private 
-
-
     public void Healing()
     {
 
     }
+
 }

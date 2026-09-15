@@ -2,28 +2,19 @@ using UnityEngine;
 
 public abstract class w4Entity : MonoBehaviour
 {
-    [SerializeField] protected int health;
-    [SerializeField] protected int defense;
+    private w4BaseStats stats;
 
-    public w4BaseStats baseStats = new w4BaseStats();
-
-    public abstract void TakeDamage();
-
-    public virtual void TakeDamage2()
+    protected virtual void Awake()
     {
-
+      stats = new(78, 7, 8);
+        //health - damage- speed 
     }
 
-    public abstract void DoDamage();
-
-
-    public abstract void OnSpawn();
-
-    public abstract void OnDead();
+    protected abstract void TakeDamage(int damage);
+    protected abstract void AttackSmt(w4Entity entity);
+    protected abstract void OnDead();
 
 
 
-    public int Health => health;
-
+    public w4BaseStats Stats => stats;
 }
-

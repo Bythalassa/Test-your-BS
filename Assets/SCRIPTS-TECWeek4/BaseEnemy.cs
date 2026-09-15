@@ -1,38 +1,29 @@
 using UnityEngine;
 
-public class w4BaseEnemy : w4Entity
+public abstract class w4BaseEnemy : w4Entity
 {
-
-    public override void TakeDamage() {
-    
-        Debug.Log("hola");
+    protected override void Awake()
+    {
+        base.Awake();
     }
 
-
-
-
-
-
-
-
-    public void MyDamage()
+    protected override void TakeDamage(int damage)
     {
-        Debug.Log(Health + health);
+        Debug.Log("ouch");
     }
 
-    public override void DoDamage()
+    protected override void AttackSmt(w4Entity entity)
     {
-
+        Debug.Log("ataque base");
     }
 
-
-    public override void OnSpawn()
+    protected override void OnDead()
     {
-
+        Debug.Log("no dropeo nada");
     }
 
-    public override void OnDead()
+    protected virtual void ChaseEntity(w4Entity Wentity)
     {
-
+        Debug.Log("Ven aqui pibble");
     }
 }
