@@ -7,9 +7,9 @@ public class w4Creeper : w4BaseEnemy
         EvolutionC();
     }
 
-    protected override void TakeDamage(int damage)
+    protected override void TakeDamage(int rbasedamage)
     {
-        base.TakeDamage(damage);
+        base.TakeDamage(rbasedamage);
     }
     protected override void AttackSmt(w4Entity entity)
     {

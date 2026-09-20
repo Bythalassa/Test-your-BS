@@ -5,6 +5,8 @@ public class w4WitherBoss : w4Zombie
     public w4BaseStats basestats;
     private int actualHealth;
 
+
+
     protected override void Awake()
     {
         base.Awake();
@@ -17,7 +19,7 @@ public class w4WitherBoss : w4Zombie
     {
         base.TakeDamage(damage);
 
-         actualHealth = basestats.Health;
+         actualHealth = basestats.BaseHealth;
 
         damage -= actualHealth; 
 
@@ -26,7 +28,7 @@ public class w4WitherBoss : w4Zombie
             actualHealth = 0;
         }
 
-        if (actualHealth >= 0) //* add percentage jaja float jaja Fight 4 Japan reference*//
+        if (actualHealth >= 0) //* add percentage 4 week 5
         {
             actualHealth = 0;
         }

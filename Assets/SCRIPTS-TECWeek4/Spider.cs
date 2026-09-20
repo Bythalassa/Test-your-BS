@@ -6,9 +6,9 @@ public class w4Spider : w4BaseEnemy
         base.Awake();
         EvolutionS();
     }
-    protected override void TakeDamage(int damage)
+    protected override void TakeDamage(int rbasedamage)
     {
-        base.TakeDamage(damage);
+        base.TakeDamage(rbasedamage);
     }
     protected override void AttackSmt(w4Entity entity)
     {

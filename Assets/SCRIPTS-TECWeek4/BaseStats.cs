@@ -1,31 +1,27 @@
 using UnityEngine;
 
-/*
- * InClassExercise DoiTSimple solo a base de debug.log (el concepto del atack etc)
+ /*InClassExercise DoiTSimple solo a base de debug.log (el concepto del atack etc)
  * 
  * abstract es una palabra clave (no tiene otra denominación solo palabra clave)
- * 
- * base.metodo (toda la direccion de padre )
- * 
-// solo a base de debug.log (el concepto del atack etc)
-//Se usa abstract para evitar usar clases en el hierarchy
-// public virtual void Name --->  Metodos flexibles que pueden cambiar 
-*/
+ * --> Moreover,evitar usar clases en el hierarchy. Y mantener un lindo ecosistema de scripts.
+ * base.metodo (toda la direccion de padre ) */
+
+
 public class w4BaseStats
 {
-    private int health;
-    private int damage;
-    private int speed;
+    private int base_health;
+   // private int base_damage;
+    private int base_speed;
 
-    public w4BaseStats(int _health, int _damage, int _speed)
+    public w4BaseStats(int _base_health, int _base_speed)
     {
-        health = _health;
-        damage = _damage;
-        speed = _speed;
+        base_health = _base_health;
+    //    base_damage = _base_damage;
+        base_speed = _base_speed;
     }
 
 
-    public int Health => health;
-    public int Damage => damage;
-    public int Speed => speed;
+    public int BaseHealth => base_health;
+    //public int BaseDamage => base_damage;
+    public int BaseSpeed => base_speed;
 }

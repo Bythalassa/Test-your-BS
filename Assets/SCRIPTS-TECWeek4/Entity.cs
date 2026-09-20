@@ -6,8 +6,10 @@ public abstract class w4Entity : MonoBehaviour
 
     protected virtual void Awake()
     {
-      stats = new(78, 7, 8);
-        //health - damage- speed 
+      stats = new(78, 8);
+        //health - speed 
+
+
     }
 
     protected abstract void TakeDamage(int damage);

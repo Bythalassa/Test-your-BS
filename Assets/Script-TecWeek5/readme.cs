@@ -45,6 +45,12 @@ public class readme
     y añade una segunda fase: al bajar del 50% de vida cambia su velocidad o su daño.
     Marcar el Boss como sealed y justificar en el README por qué nadie debería heredar de él.
 
+    bueno claudio no sirve statement//////////////
+
+
+
+
+
 
 
 

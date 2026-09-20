@@ -8,10 +8,13 @@ public class w4Zombie : w4BaseEnemy
         base.Awake();
         EvolutionZ();
     }
-    protected override void TakeDamage(int damage)
+
+    protected override void TakeDamage(int rbasedamage)
     {
-        base.TakeDamage(damage);
+        base.TakeDamage(rbasedamage);
+
     }
+
     protected override void AttackSmt(w4Entity entity)
     {
         base.AttackSmt(entity);
