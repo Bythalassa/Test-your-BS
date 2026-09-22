@@ -30,7 +30,7 @@ public class FeelTopdownPlayer : MonoBehaviour
        // BaseSpeed = 
 
         //suma e iguala los valores real tie en transform.position a la dirección x Speed x Time
-       // transform.position += direction * BaseSpeed * Time.deltaTime; 
+        transform.position += direction * stats.BaseSpeed * Time.deltaTime; 
     }
 
     private void CanAttack()
