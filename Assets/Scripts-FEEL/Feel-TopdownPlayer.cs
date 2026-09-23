@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FeelTopdownPlayer : MonoBehaviour
@@ -13,7 +14,10 @@ public class FeelTopdownPlayer : MonoBehaviour
     void Update()
     {
         CanMove();
-        CanAttack();
+
+        if (Input.GetKeyDown(KeyCode.E)) { CanMeleeAttack(); }
+        if (Input.GetKeyDown(KeyCode.Q)) { CanShot(); }
+     
     }
 
     private void CanMove()
@@ -27,18 +31,52 @@ public class FeelTopdownPlayer : MonoBehaviour
         //normalize it
         direction.Normalize();
 
-       // BaseSpeed = 
-
         //suma e iguala los valores real tie en transform.position a la dirección x Speed x Time
-        transform.position += direction * stats.BaseSpeed * Time.deltaTime; 
+        transform.position += direction * stats.BaseSpeed * Time.deltaTime;
     }
 
-    private void CanAttack()
+    /*  Estructura de la función de Atacar: 
+    
+    public Enemy defaultTarget; eso es el script de enemy whatttt
+
+    La referencia de que es player no esta optimizado --> 
+    ---> Hasta lo que yo estaba acostumbrado a hacer es se lo pasa un Tag
+    !!! Lo optimizado es Que pase la pase quien lo crea, (un spawner(?)??)??) 
+    en un Initialize(Player objetivo) 
+
+    
+     if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Attack(defaultTarget);
+        }
+    
+     public void Attack(Enemy target) // ojo con la referencia del Enemy {  } */
+
+
+    private void CanMeleeAttack()
     {
-
+       
 
     }
 
+    private void CanShot()
+    {
+        
+
+        //Input.mouse
+        Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 direction = (mousePos - transform.position);
+        direction.z = 0;
+        direction.Normalize();
 
 
+        /*if(Input.GetMouseButtonDown(0))
+        {
+          GameObject bullet = Instantiate(/*BulletPrefab ,  transform.position,Quaternion.identity);   
+          bullet.transform.up = direction;
+        } */
+
+    }
 }
