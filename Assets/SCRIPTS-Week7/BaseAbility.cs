@@ -1,16 +1,28 @@
 using UnityEngine;
+using MoreMountains.Feedbacks;
+using System;
 
-public class BaseAbility : MonoBehaviour
+public abstract class BaseAbilityweek7 : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public Projectile projectilePrefab;
+    public Transform firePoint;
+    public MMF_Player castFeedback;
+
+    public abstract void Execute();
+
+    protected virtual void PlayFeedback()
     {
-        
+        castFeedback.PlayFeedbacks();
     }
 
-    // Update is called once per frame
-    void Update()
+    protected void Shoot(float speed, StatusEffect effect, float duration)
     {
-        
+        Projectile projectile = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
+        projectile.speed = speed;
+        projectile.duration = duration;
+        projectile.effect = effect;
+
     }
+
+
 }

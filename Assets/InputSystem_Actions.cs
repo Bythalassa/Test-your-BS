@@ -123,7 +123,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""852140f2-7766-474d-8707-702459ba45f3"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": ""Hold"",
                     ""initialStateCheck"": false
@@ -168,7 +168,61 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""name"": ""Sprint"",
                     ""type"": ""Button"",
                     ""id"": ""641cd816-40e6-41b4-8c3d-04687c349290"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Ability1"",
+                    ""type"": ""Button"",
+                    ""id"": ""80fd8ad4-4fde-42f9-837e-1ad9ab18b65e"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Ability2"",
+                    ""type"": ""Button"",
+                    ""id"": ""9381601d-cd34-45e1-84a3-382e4e89065e"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Ability3"",
+                    ""type"": ""Button"",
+                    ""id"": ""e01c322b-4bcc-462e-8386-ca2e5569f365"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Ability4"",
+                    ""type"": ""Button"",
+                    ""id"": ""4f12b0fa-2058-4f3c-9d8b-5f448d5b04f0"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Ability5"",
+                    ""type"": ""Button"",
+                    ""id"": ""153b2c95-441b-4fdb-be36-1a1c9e7e81c3"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ApplyStattus"",
+                    ""type"": ""Button"",
+                    ""id"": ""45fedec8-0c73-42e0-a809-c8b40b1af8db"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -557,6 +611,72 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""Crouch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""224a9fb1-8295-4af8-b290-0338ca01fa39"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ability1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""587fbea6-0fa2-4ee0-9cd1-06dac3188952"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ability2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e5dc3fa7-460f-433e-b96b-87e300e1c6cf"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ability3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c078dfa4-b3ca-409f-aa4e-77eebaf399b9"",
+                    ""path"": ""<Keyboard>/4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ability4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8e78f90a-f0f3-4c56-9fea-7d4d37fab267"",
+                    ""path"": ""<Keyboard>/5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ability5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""895d9ab0-09b5-4d29-88c6-453c5f8f5877"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ApplyStattus"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1153,6 +1273,12 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Player_Previous = m_Player.FindAction("Previous", throwIfNotFound: true);
         m_Player_Next = m_Player.FindAction("Next", throwIfNotFound: true);
         m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
+        m_Player_Ability1 = m_Player.FindAction("Ability1", throwIfNotFound: true);
+        m_Player_Ability2 = m_Player.FindAction("Ability2", throwIfNotFound: true);
+        m_Player_Ability3 = m_Player.FindAction("Ability3", throwIfNotFound: true);
+        m_Player_Ability4 = m_Player.FindAction("Ability4", throwIfNotFound: true);
+        m_Player_Ability5 = m_Player.FindAction("Ability5", throwIfNotFound: true);
+        m_Player_ApplyStattus = m_Player.FindAction("ApplyStattus", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1255,6 +1381,12 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Previous;
     private readonly InputAction m_Player_Next;
     private readonly InputAction m_Player_Sprint;
+    private readonly InputAction m_Player_Ability1;
+    private readonly InputAction m_Player_Ability2;
+    private readonly InputAction m_Player_Ability3;
+    private readonly InputAction m_Player_Ability4;
+    private readonly InputAction m_Player_Ability5;
+    private readonly InputAction m_Player_ApplyStattus;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -1302,6 +1434,30 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Sprint".
         /// </summary>
         public InputAction @Sprint => m_Wrapper.m_Player_Sprint;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Ability1".
+        /// </summary>
+        public InputAction @Ability1 => m_Wrapper.m_Player_Ability1;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Ability2".
+        /// </summary>
+        public InputAction @Ability2 => m_Wrapper.m_Player_Ability2;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Ability3".
+        /// </summary>
+        public InputAction @Ability3 => m_Wrapper.m_Player_Ability3;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Ability4".
+        /// </summary>
+        public InputAction @Ability4 => m_Wrapper.m_Player_Ability4;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Ability5".
+        /// </summary>
+        public InputAction @Ability5 => m_Wrapper.m_Player_Ability5;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/ApplyStattus".
+        /// </summary>
+        public InputAction @ApplyStattus => m_Wrapper.m_Player_ApplyStattus;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1355,6 +1511,24 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Sprint.started += instance.OnSprint;
             @Sprint.performed += instance.OnSprint;
             @Sprint.canceled += instance.OnSprint;
+            @Ability1.started += instance.OnAbility1;
+            @Ability1.performed += instance.OnAbility1;
+            @Ability1.canceled += instance.OnAbility1;
+            @Ability2.started += instance.OnAbility2;
+            @Ability2.performed += instance.OnAbility2;
+            @Ability2.canceled += instance.OnAbility2;
+            @Ability3.started += instance.OnAbility3;
+            @Ability3.performed += instance.OnAbility3;
+            @Ability3.canceled += instance.OnAbility3;
+            @Ability4.started += instance.OnAbility4;
+            @Ability4.performed += instance.OnAbility4;
+            @Ability4.canceled += instance.OnAbility4;
+            @Ability5.started += instance.OnAbility5;
+            @Ability5.performed += instance.OnAbility5;
+            @Ability5.canceled += instance.OnAbility5;
+            @ApplyStattus.started += instance.OnApplyStattus;
+            @ApplyStattus.performed += instance.OnApplyStattus;
+            @ApplyStattus.canceled += instance.OnApplyStattus;
         }
 
         /// <summary>
@@ -1393,6 +1567,24 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Sprint.started -= instance.OnSprint;
             @Sprint.performed -= instance.OnSprint;
             @Sprint.canceled -= instance.OnSprint;
+            @Ability1.started -= instance.OnAbility1;
+            @Ability1.performed -= instance.OnAbility1;
+            @Ability1.canceled -= instance.OnAbility1;
+            @Ability2.started -= instance.OnAbility2;
+            @Ability2.performed -= instance.OnAbility2;
+            @Ability2.canceled -= instance.OnAbility2;
+            @Ability3.started -= instance.OnAbility3;
+            @Ability3.performed -= instance.OnAbility3;
+            @Ability3.canceled -= instance.OnAbility3;
+            @Ability4.started -= instance.OnAbility4;
+            @Ability4.performed -= instance.OnAbility4;
+            @Ability4.canceled -= instance.OnAbility4;
+            @Ability5.started -= instance.OnAbility5;
+            @Ability5.performed -= instance.OnAbility5;
+            @Ability5.canceled -= instance.OnAbility5;
+            @ApplyStattus.started -= instance.OnApplyStattus;
+            @ApplyStattus.performed -= instance.OnApplyStattus;
+            @ApplyStattus.canceled -= instance.OnApplyStattus;
         }
 
         /// <summary>
@@ -1756,6 +1948,48 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnSprint(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Ability1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAbility1(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Ability2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAbility2(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Ability3" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAbility3(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Ability4" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAbility4(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Ability5" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAbility5(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "ApplyStattus" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnApplyStattus(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.
